@@ -1,31 +1,59 @@
 
-    <!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Idle Foundry</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="branding">
+          <h1>Idle Foundry</h1>
+          <p>Click. Build. Automate. Watch the numbers soar.</p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <span class="label">Total Credits</span>
+            <span class="value" id="resource-total">0</span>
+          </div>
+          <div class="stat">
+            <span class="label">Per Second</span>
+            <span class="value" id="resource-rate">0</span>
+          </div>
+        </div>
+      </header>
 
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="./styles.css" />
-      <link rel="stylesheet" type="text/css" href="./index.css" />
-      <script src="./index.js"></script>
-      
-       
-    </head>
+      <main class="app-main">
+        <section class="primary-action">
+          <button id="main-click" class="clicker">Generate Credits</button>
+          <p class="click-hint">
+            Each press mints fresh credits (+<span id="click-value">0</span>/click). Automate to scale faster.
+          </p>
+          <p class="offline" id="offline-gain" aria-live="polite"></p>
+        </section>
 
-    <body data-instant-intensity="all" class="primo-page">   
-      <div id="section-zx1ag">
-	<div class="columns flex flex-wrap container">
-		<div class="column w-full" id="column-bbaai">
-			<div class="primo-copy" id="copy-jvgn6">
-				<p>rewrwerew</p><p>hhghgf dsadasd</p><p><br><a href='/faq.html'>dsadsadsad</a></p>
-			</div>
-		</div>
-	</div>
-</div>
+        <section class="panels">
+          <div class="panel" id="buildings-panel">
+            <h2>Automation</h2>
+            <div class="card-list" id="buildings-list"></div>
+          </div>
 
-      
-      
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.js" integrity="sha256-DdSiNPR71ROAVMqT6NiHagLAtZv9EHeByYuVxygZM5g=" crossorigin="anonymous"></script>
-    </body>
-    </html>
-  
+          <div class="panel" id="upgrades-panel">
+            <h2>Upgrades</h2>
+            <div class="card-list" id="upgrades-list"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <p>Progress saves automatically. Come back anytime for offline gains.</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
