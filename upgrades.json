@@ -1,0 +1,44 @@
+[
+  {
+    "id": "reinforced_clicks",
+    "name": "Reinforced Clicks",
+    "description": "Precision gloves double the potency of manual input.",
+    "cost": 50,
+    "effect": { "type": "mult", "target": "click", "value": 2 }
+  },
+  {
+    "id": "precision_cursors",
+    "name": "Precision Cursors",
+    "description": "Auto pointers recalibrate for twice the pull.",
+    "cost": 150,
+    "effect": { "type": "mult", "target": "cursor", "value": 2 }
+  },
+  {
+    "id": "drone_swarm",
+    "name": "Drone Swarm",
+    "description": "Coordinated fleets boost drone throughput by 80%.",
+    "cost": 600,
+    "effect": { "type": "mult", "target": "drone", "value": 1.8 }
+  },
+  {
+    "id": "automation_blueprints",
+    "name": "Automation Blueprints",
+    "description": "Bulk orders trim factory construction costs by 10%.",
+    "cost": 2500,
+    "effect": { "type": "discount", "target": "factory", "value": 0.9 }
+  },
+  {
+    "id": "research_grants",
+    "name": "Research Grants",
+    "description": "Funding surge doubles lab discoveries.",
+    "cost": 5000,
+    "effect": { "type": "mult", "target": "research_lab", "value": 2 }
+  },
+  {
+    "id": "quantum_entropy",
+    "name": "Quantum Entropy Harness",
+    "description": "Global systems synchronize for twice the baseline output.",
+    "cost": 8000,
+    "effect": { "type": "mult", "target": "global", "value": 2 }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "description": "Assists every click with autonomous taps.",
+    "baseCost": 15,
+    "baseRate": 0.1
+  },
+  {
+    "id": "drone",
+    "name": "Drone",
+    "description": "Aerial hauler that ferries credits nonstop.",
+    "baseCost": 100,
+    "baseRate": 1
+  },
+  {
+    "id": "factory",
+    "name": "Factory",
+    "description": "Industrial line forging credits at scale.",
+    "baseCost": 550,
+    "baseRate": 6
+  },
+  {
+    "id": "research_lab",
+    "name": "Research Lab",
+    "description": "Scientists accelerate every process they touch.",
+    "baseCost": 2500,
+    "baseRate": 24
+  },
+  {
+    "id": "quantum_gateway",
+    "name": "Quantum Gateway",
+    "description": "Taps alternate timelines to siphon bonus output.",
+    "baseCost": 12000,
+    "baseRate": 110
+  }
+]
